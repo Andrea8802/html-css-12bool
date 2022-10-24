@@ -1,3 +1,8 @@
+.container-fluid{
+    margin-bottom: 20px;
+}
+
+
 [class*="col"]{
     background-color: #006cfa;
     border: 1px solid white;
@@ -8,12 +13,8 @@
     align-items: center;
 }
 
-.row.big [class*="col"]{
+[class*="col"].big{
     height: 80px;
-}
-
-.row:nth-child(6), .row:nth-child(13), .row:nth-child(25){
-    margin-bottom: 20px;
 }
 
 .row .row{

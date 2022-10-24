@@ -1,3 +1,7 @@
+.container-fluid{
+    margin-bottom: 15px;
+}
+
 [class*="col"]{
     background-color: #006cfa;
     border: 1px solid white;
@@ -8,9 +12,11 @@
     align-items: center;
 }
 
-.row.big [class*="col"]{
+
+[class*="col"].big{
     height: 80px;
 }
+
 
 .row .row{
     width: 100%;
@@ -20,9 +26,29 @@
     margin: 0 15px;
 }
 
-.row .row > [class*="col"]{
+.row .row  [class*="col"]{
     background-color: #00e265;
     border: 1px solid #006cfa;
     width: 90%;
     height: 60%;
+}
+
+.col-6.top{
+    align-self: flex-start;
+}
+
+.col-6.middle{
+    align-self: center;
+}
+
+.col-6.bottom{
+    align-self: flex-end;
+}
+
+.row.around{
+    justify-content: space-around;
+}
+
+.row.between{
+    justify-content: space-between ;
 }
